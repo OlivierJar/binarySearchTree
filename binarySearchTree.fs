@@ -1,8 +1,2 @@
-type tree =
-    |{
-    left:tree;
-    value:number;
-    right:tree
-    }
-    |null
-
+type Branch = Tree option
+and Tree ={left:Branch;value:float;right:Branch}
